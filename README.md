@@ -1,4 +1,4 @@
-# Previewify for PHP
+# Previewify for Node.js
 
 This is the official [Previewify](https://previewify.app) client for Node.js.
 
