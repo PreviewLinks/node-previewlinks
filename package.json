@@ -2,13 +2,14 @@
     "name": "@flowframe/node-previewify",
     "description": "The official Previewify node.js SDK",
     "main": "src/index.js",
+    "version": "0.1.0",
     "scripts": {
         "prettier": "npx prettier --write ./src"
     },
     "keywords": [
         "previewify"
     ],
-    "author": "lars@flowframe.nl",
+    "author": "Lars Klopstra",
     "license": "MIT",
     "dependencies": {
         "axios": "^0.25.0"
