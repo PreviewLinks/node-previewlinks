@@ -1,13 +1,13 @@
-# Previewify for Node.js
+# PreviewLinks for Node.js
 
-This is the official [Previewify](https://previewify.app) client for Node.js.
+This is the official [PreviewLinks](https://previewlinks.io) client for Node.js.
 
 ## Installation
 
 You can install the package via NPM:
 
 ```bash
-npm install @flowframe/node-previewify
+npm install @previewlinks/node-previewlinks
 ```
 
 ## Usage
@@ -15,30 +15,30 @@ npm install @flowframe/node-previewify
 ### Creating an instance
 
 ```js
-const { Previewify } = require('@flowframe/node-previewify')
+const { PreviewLinks } = require('@previewlinks/node-previewlinks')
 
-const previewify = new Previewify({ apiToken: '<YOUR_API_TOKEN>' })
+const previewlinks = new PreviewLinks({ apiToken: '<YOUR_API_TOKEN>' })
 ```
 
 ### Methods
 
 ```js
 // List sites
-previewify
+previewlinks
     .listSites()
     .then(response => response.data)
 
 // Show site
 let siteId = 1
 
-previewify
+previewlinks
     .showSite(siteId)
     .then(response => response.data)
 
 // Show site's templates
 let siteId = 1
 
-previewify
+previewlinks
     .listSiteTemplates(siteId)
     .then(response => response.data)
 
@@ -46,11 +46,11 @@ previewify
 let siteId = 1
 let templateId = 1
 let fields = {
-    'previewify:title': 'Hello from Node.js!',
-    'previewify:subtitle': 'This is an example...',
+    'previewlinks:title': 'Hello from Node.js!',
+    'previewlinks:subtitle': 'This is an example...',
 }
 
-previewify
+previewlinks
     .downloadImage({
         siteId,
         templateId,
@@ -65,6 +65,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
+-   [Logan Craft](https://github.com/CraftLogan)
 -   [Lars Klopstra](https://github.com/flowframe)
 -   [All Contributors](../../contributors)
 
