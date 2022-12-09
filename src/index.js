@@ -1,10 +1,10 @@
 const axios = require('axios')
 const crypto = require('crypto')
 
-class Previewify {
-    #API_BASE_URL = 'https://previewify.app/api/v1'
+class PreviewLinks {
+    #API_BASE_URL = 'https://previewlinks.io/api/v1'
 
-    #GENERATE_BASE_URL = 'https://previewify.app/generate'
+    #GENERATE_BASE_URL = 'https://previewlinks.io/generate'
 
     constructor({ apiToken }) {
         this.apiToken = apiToken
@@ -51,5 +51,5 @@ class Previewify {
 }
 
 module.exports = {
-    Previewify,
+    PreviewLinks,
 }
