@@ -1,15 +1,16 @@
 {
-    "name": "@flowframe/node-previewify",
-    "description": "The official Previewify node.js SDK",
+    "name": "@previewlinks/node-previewlinks",
+    "description": "The official PreviewLinks node.js SDK",
     "main": "src/index.js",
     "version": "0.1.0",
     "scripts": {
         "prettier": "npx prettier --write ./src"
     },
     "keywords": [
+        "previewlinks",
         "previewify"
     ],
-    "author": "Lars Klopstra",
+    "author": "Logan Craft",
     "license": "MIT",
     "dependencies": {
         "axios": "^0.25.0"
